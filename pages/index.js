@@ -21,7 +21,7 @@ export default function Home() {
       if (response.status !== 200) {
         throw data.error || new Error(`Request failed with status ${response.status}`);
       }
-
+      //console.log(`Result: ${data.result}`);
       setResult(data.result);
     } catch(error) {
       // Consider implementing your own error handling logic here
